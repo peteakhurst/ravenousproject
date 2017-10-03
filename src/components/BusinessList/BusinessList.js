@@ -9,16 +9,11 @@ class BusinessList extends React.Component{
     return (
     <div className="BusinessList">
     <Business />
-    <BusinessList />
-    <Business />
-    <BusinessList />
-    <Business />
-    <BusinessList />
-    <Business />
-    <BusinessList />
     <Business />
     <Business />
-      <BusinessList />
+    <Business />
+    <Business />
+    <Business />
     </div>
     );
   };
