@@ -8,12 +8,20 @@ class BusinessList extends React.Component{
   render() {
     return (
     <div className="BusinessList">
-    <Business />
-    <Business />
-    <Business />
-    <Business />
-    <Business />
-    <Business />
+      {
+        this.props.businesses.map((business) => {
+          return <Business
+                  imgSrc={business.imageSrc}
+                  name={business.name}
+                  address={business.address}
+                  city={business.city}
+                  state={business.state}
+                  zipCode={business.zipCode}
+                  category={business.category}
+                  rating={business.rating}
+                  reviewCount={business.reviewCount} />
+        })
+      }
     </div>
     );
   };
